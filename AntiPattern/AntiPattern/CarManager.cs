@@ -22,11 +22,13 @@ namespace AntiPattern
             if (!(CarList.Contains(audi)))
             {
                 CarList.Add(audi);
+                logger.Log($"Car {audi.model} have added");
             }
             else
             {
                 throw new Exception($"{nameof(audi)} already exists");
             }
+            
         }
      
         public void AddPeugeot(Peugeot peugeot)
@@ -34,6 +36,7 @@ namespace AntiPattern
             if (!(CarList.Contains(peugeot)))
             {
                 CarList.Add(peugeot);
+                logger.Log($"Car {peugeot.model} have added");
             }
             else
             {

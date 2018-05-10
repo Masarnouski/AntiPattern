@@ -18,11 +18,13 @@ namespace AntiPattern
             carmanager.AddPeugeot(peugeot);
             carmanager.AddPeugeot(mCycle);
             Peugeot peugeot1 = new MotorCycle();
-            Console.WriteLine(peugeot1.amountOfWheels);      // motorcycle has 2 wheels
+            Console.WriteLine(peugeot1.amountOfWheels);
             Console.ReadLine();
+
             peugeot.FuelUp(30);
             peugeot.Drive(100);
-
+            peugeot.Save();
+            Console.ReadLine();
         }
     }
 }

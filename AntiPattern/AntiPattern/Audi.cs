@@ -31,7 +31,7 @@ namespace AntiPattern
         }
 
         public void Save() { }
-        public void Delete() { }
+        public void Load() { }
 
         public void Dig()
         { }

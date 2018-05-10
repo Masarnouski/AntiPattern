@@ -9,7 +9,8 @@ namespace AntiPattern
 {
     class FileLogger
     {
-        public void Log(string m,string path)
+        string path = "Log.txt";
+        public void Log(string m)
         {
             File.AppendText(path).Write(m);
         }
