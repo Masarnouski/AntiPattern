@@ -12,24 +12,37 @@ namespace AntiPattern
         public int dateOfManufacture;
         public int AmountOfWheels = 4;
         public int gas;
+        public int consumption;
+        public int gasTankCapacity;
 
         public Excavator()
         {
             this.model = "JCB";
             this.dateOfManufacture = 2005;
+            consumption = 16;
+            gasTankCapacity = 60;
         }
 
         public void Dig()
-        {}
-
-        public void Drive()
         {
-            gas--;
         }
 
-        public void FuelUp()
+        public void Drive(int distance)
         {
-            gas++;
+
+            int temp = distance / 100 * consumption;
+            if ((gas -= temp) < 0)
+                gas = 0;
+            else
+                gas -= temp;
+        }
+
+        public void FuelUp(int number)
+        {
+            if ((gas += number) > gasTankCapacity)
+                gas = gasTankCapacity;
+            else
+                gas += number;
         }
     }
 }

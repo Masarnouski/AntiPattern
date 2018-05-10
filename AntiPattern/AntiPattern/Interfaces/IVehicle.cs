@@ -8,8 +8,8 @@ namespace AntiPattern
 {
     interface IVehicle
     {
-        void Drive();
-        void FuelUp();
+        void Drive(int distance);
+        void FuelUp(int number);
         void Dig();
     }
 }

@@ -19,12 +19,26 @@ namespace AntiPattern
         
         public void AddAudi(Audi audi)
         {
-            CarList.Add(audi);
+            if (!(CarList.Contains(audi)))
+            {
+                CarList.Add(audi);
+            }
+            else
+            {
+                throw new Exception($"{nameof(audi)} already exists");
+            }
         }
      
         public void AddPeugeot(Peugeot peugeot)
         {
-            CarList.Add(peugeot);
+            if (!(CarList.Contains(peugeot)))
+            {
+                CarList.Add(peugeot);
+            }
+            else
+            {
+                throw new Exception($"{nameof(peugeot)} already exists");
+            }
         }
     }
 }

@@ -20,7 +20,8 @@ namespace AntiPattern
             Peugeot peugeot1 = new MotorCycle();
             Console.WriteLine(peugeot1.amountOfWheels);      // motorcycle has 2 wheels
             Console.ReadLine();
-            peugeot.Drive();
+            peugeot.FuelUp(30);
+            peugeot.Drive(100);
 
         }
     }
