@@ -6,26 +6,36 @@ using System.Threading.Tasks;
 
 namespace AntiPattern
 {
-    class Peugeot:IVehicle
+    class Peugeot: IVehicle
     {
         public string model;
         public int dateOfManufacture;
+        public int amountOfWheels=4;
         public int gas;
+
         public Peugeot()
         {
             this.model = "406";
             this.dateOfManufacture = 2018;
         }
-        public void Drive() { }
-        public void FuelUp() { }
 
-        //Break srp principle(must be on the DAL layer)
+        public void CountMileage() { }
+
         public void Save() { }
         public void Delete() { }
 
         public void Dig()
         {
-            throw new NotImplementedException();
+        }
+
+        public void Drive()
+        {
+            gas--;
+        }
+
+        public void FuelUp()
+        {
+            gas++;
         }
     }
 }

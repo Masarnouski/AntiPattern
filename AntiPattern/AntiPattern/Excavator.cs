@@ -8,19 +8,28 @@ namespace AntiPattern
 {
     class Excavator : IVehicle
     {
-        public void Dig()
+        public string model;
+        public int dateOfManufacture;
+        public int AmountOfWheels = 4;
+        public int gas;
+
+        public Excavator()
         {
-            throw new NotImplementedException();
+            this.model = "JCB";
+            this.dateOfManufacture = 2005;
         }
+
+        public void Dig()
+        {}
 
         public void Drive()
         {
-            throw new NotImplementedException();
+            gas--;
         }
 
         public void FuelUp()
         {
-            throw new NotImplementedException();
+            gas++;
         }
     }
 }

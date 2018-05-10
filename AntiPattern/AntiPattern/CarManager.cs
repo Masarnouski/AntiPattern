@@ -8,22 +8,22 @@ namespace AntiPattern
 {
     class CarManager
     {
+        FileLogger logger;
         public List<object> CarList;
 
         public CarManager()
         {
+            logger = new FileLogger();
             CarList = new List<object>();
         }
-        //Breaking Dependency Inversion Principle Tight coupling code
-        public void AddAudi()
+        
+        public void AddAudi(Audi audi)
         {
-            Audi audi = new Audi();
             CarList.Add(audi);
         }
-        //Breaking Dependency Inversion Principle Tight coupling code
-        public void AddPeugeot()
+     
+        public void AddPeugeot(Peugeot peugeot)
         {
-            Peugeot peugeot = new Peugeot();
             CarList.Add(peugeot);
         }
     }

@@ -45,6 +45,7 @@
     <Compile Include="Audi.cs" />
     <Compile Include="CarManager.cs" />
     <Compile Include="Excavator.cs" />
+    <Compile Include="Loggers\FileLogger.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
     <Compile Include="MotorCycle.cs" />
     <Compile Include="Peugeot.cs" />
