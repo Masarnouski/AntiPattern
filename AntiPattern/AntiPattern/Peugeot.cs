@@ -10,6 +10,7 @@ namespace AntiPattern
     class Peugeot: IVehicle
     {
         //hello
+        //hello partial
         public string model;
         public int dateOfManufacture;
         public int amountOfWheels = 4;
