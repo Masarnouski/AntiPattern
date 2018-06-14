@@ -14,7 +14,7 @@ namespace AntiPattern
         public string model;
         public int dateOfManufacture;
         public int amountOfWheels = 4;
-        public int gas;
+        public int gas; // hello
         public int consumption;
         public int gasTankCapacity;
         public int mileage;
