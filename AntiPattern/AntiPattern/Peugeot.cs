@@ -9,6 +9,7 @@ namespace AntiPattern
 {
     class Peugeot: IVehicle
     {
+        //add comments
         public string model;
         public int dateOfManufacture;
         public int amountOfWheels = 4;
