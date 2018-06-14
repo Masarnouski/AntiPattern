@@ -11,6 +11,7 @@ namespace AntiPattern
     {
         //hello
         //hello partial
+        //hellopartial2
         public string model;
         public int dateOfManufacture;
         public int amountOfWheels = 4;
